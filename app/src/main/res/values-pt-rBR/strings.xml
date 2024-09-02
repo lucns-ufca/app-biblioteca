@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Minha Biblioteca</string>
+    <string name="team_seventeen">Equipe 17</string>
+    <string name="password">Senha</string>
+    <string name="new_account">Nova Conta</string>
+    <string name="create_account">Criar Conta</string>
+    <string name="forgotten_password">Esqueci minha senha</string>
+    <string name="deficiency_person">PCD</string>
+    <string name="name">Nome</string>
+    <string name="accessing">Acessando&#8230;</string>
+    <string name="close">Fechar</string>
+    <string name="user_registered">Usuário registrado com sucesso!</string>
+    <string name="user_not_registered">Usuário não registrado!</string>
+    <string name="user_already_exists">Usuário já registrado!</string>
+    <string name="wrong_password">Senha inválida!</string>
+    <string name="invalid_data">Dados inválidos!</string>
+    <string name="try_create_account">Tente criar uma nova conta.</string>
+    <string name="try_using_different">Try using a different cpf</string>
+    <string name="pd_description">Descreva sua  deficiência</string>
+    <string name="creating_account">Criando conta&#8230;</string>
+    <string name="hello">Olá</string>
+    <string name="scientist">Cientista</string>
+    <string name="last_accessed">Últimos acessados</string>
+    <string name="in_debts">Há livros com entrega em atraso, portanto há debitos a serem pagos!</string>
+    <string name="debit_value">R$21,98</string>
+    <string name="debits_per_delay">Debito por atrado de entrega</string>
+    <string name="read_books">Total de livros lidos</string>
+    <string name="favorites">Favoritos</string>
+
+    <string name="library">Biblioteca</string>
+    <string name="search_book">Pesquisar um Livro</string>
+    <string name="profile">Meu Perfil</string>
+    <string name="debits">Meus Debitos</string>
+    <string name="click_me">Click-me</string>
+
+    <string name="menu_another">Outro menu iten</string>
+    <string name="menu_item_another">Item do menu clicado!</string>
+
+</resources>

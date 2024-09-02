@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin_2">12dp</dimen>
+    <dimen name="margin_3">16dp</dimen>
+    <dimen name="margin_4">24dp</dimen>
+    <dimen name="margin_5">36dp</dimen>
+    <dimen name="margin_6">42dp</dimen>
+    <dimen name="margin_7">56dp</dimen>
+
+    <dimen name="dialog_width">300dp</dimen>
+    <dimen name="list_item_gradient_space">96dp</dimen>
+</resources>

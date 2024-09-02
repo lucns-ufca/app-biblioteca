@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/fragment_card"
+    android:elevation="@dimen/margin"
+    android:paddingStart="@dimen/margin_3"
+    android:paddingTop="@dimen/margin_3"
+    android:paddingEnd="@dimen/margin_3"
+    android:paddingBottom="@dimen/margin">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="@color/default_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/app_name"
+        android:textColor="@color/default_text_dark" />
+
+    <Button
+        android:id="@+id/buttonNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/button_transparent"
+        android:text="@string/close"
+        android:textColor="@drawable/transparent_button_text_state" />
+</RelativeLayout>

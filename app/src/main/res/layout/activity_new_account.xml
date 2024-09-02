@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragmentTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_upper"
+        android:elevation="4dp"
+        android:padding="@dimen/margin_5">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_4"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/new_account"
+            android:textColor="@color/accent"
+            android:textSize="42sp" />
+
+        <RelativeLayout
+            android:id="@+id/rootLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rootForm"
+            android:layout_alignBottom="@+id/rootForm"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/creating_account" />
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/margin" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:indeterminateOnly="true"
+                    android:indeterminateTint="@color/accent" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rootForm"
+            android:layout_below="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextUser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/cpf"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingStart="@dimen/margin_2"
+                android:paddingEnd="@dimen/margin_2"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@drawable/cursor" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editTextUser"
+                android:layout_marginTop="@dimen/margin_3"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:paddingStart="@dimen/margin_2"
+                android:paddingEnd="@dimen/margin_2"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@drawable/cursor" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editTextName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_3"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/password"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/margin_2"
+                android:paddingEnd="@dimen/margin_2"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@drawable/cursor" />
+
+            <TextView
+                android:id="@+id/textDisabledPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/aSwitch"
+                android:layout_alignBottom="@+id/aSwitch"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:layout_toStartOf="@+id/aSwitch"
+                android:gravity="center"
+                android:text="@string/deficiency_person"
+                android:textColor="@color/default_text_dark" />
+
+            <Switch
+                android:id="@+id/aSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPassword"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin" />
+
+            <RelativeLayout
+                android:id="@+id/rootEditTextPd"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/aSwitch"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonNewAccount"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/rootEditTextPd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@drawable/button_state"
+                android:enabled="false"
+                android:text="@string/create_account"
+                android:textColor="@drawable/text_state" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/buttonNewAccount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@drawable/button_transparent"
+                android:text="@string/login"
+                android:textColor="@drawable/text_state" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

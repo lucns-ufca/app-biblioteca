@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:src="@drawable/app_icon"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appIcon"
+            android:layout_marginTop="@dimen/margin_3"
+            android:fontFamily="@font/light"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textTeamSevenTeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/thin"
+            android:text="@string/team_seventeen"
+            android:textColor="@color/accent"
+            android:textSize="36sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ufcaLogo"
+        android:layout_width="103dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/ufca_white"
+        android:visibility="invisible" />
+</RelativeLayout>

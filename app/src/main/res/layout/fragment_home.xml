@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/initial_page_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/fragment_background"
+        android:paddingTop="@dimen/margin_5">
+
+        <RelativeLayout
+            android:id="@+id/rootHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/buttonUser"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_3"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@drawable/fab_white_transparent"
+                android:src="@drawable/icon_person" />
+
+            <TextView
+                android:id="@+id/textHello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_3"
+                android:text="@string/hello"
+                android:textColor="@color/accent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textHello"
+                android:layout_marginStart="@dimen/margin_3"
+                android:layout_toEndOf="@+id/textHello"
+                android:fontFamily="@font/light"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textUserName"
+                android:layout_alignBottom="@+id/textUserName"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_toEndOf="@+id/textUserName"
+                android:src="@drawable/icon_verified" />
+
+            <TextView
+                android:id="@+id/textUserType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUserName"
+                android:layout_alignStart="@id/textUserName"
+                android:text="@string/scientist" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUserType"
+                android:layout_alignStart="@id/textUserType"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_star_full" />
+
+                <ImageView
+                    android:id="@+id/start2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_star_full" />
+
+                <ImageView
+                    android:id="@+id/start3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_star_full" />
+
+                <ImageView
+                    android:id="@+id/start4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_star_half" />
+
+                <ImageView
+                    android:id="@+id/start5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_star" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_3"
+            android:layout_below="@+id/rootHeader"
+            android:layout_marginTop="@dimen/margin_3"
+            android:layout_marginBottom="160dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/card"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_transparent"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:elevation="4dp"
+                    android:padding="@dimen/margin_3">
+
+                    <TextView
+                        android:id="@+id/textDebit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:text="@string/debit_value"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textDebit"
+                        android:layout_alignBottom="@+id/textDebit"
+                        android:layout_marginStart="@dimen/margin"
+                        android:layout_toEndOf="@+id/textDebit"
+                        android:src="@drawable/icon_warning" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/textDescription"
+                        android:layout_below="@+id/textDebit">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/line_gradient" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/black"
+                        android:text="@string/debits_per_delay"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card2"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:layout_toEndOf="@+id/card"
+                    android:background="@drawable/card_transparent"
+                    android:elevation="4dp"
+                    android:padding="@dimen/margin_3">
+
+                    <TextView
+                        android:id="@+id/textRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:text="@string/read_books_value"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textRead"
+                        android:layout_alignBottom="@+id/textRead"
+                        android:layout_marginStart="@dimen/margin"
+                        android:layout_toEndOf="@+id/textRead"
+                        android:src="@drawable/icon_book_openned" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/textDescription2"
+                        android:layout_below="@+id/textRead">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/line_gradient" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textDescription2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/black"
+                        android:text="@string/read_books"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card3"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:layout_toEndOf="@+id/card2"
+                    android:background="@drawable/card_transparent"
+                    android:elevation="4dp"
+                    android:padding="@dimen/margin_3">
+
+                    <TextView
+                        android:id="@+id/textFavoritesValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:text="@string/favorites_value"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textFavoritesValue"
+                        android:layout_alignBottom="@+id/textFavoritesValue"
+                        android:layout_marginStart="@dimen/margin"
+                        android:layout_toEndOf="@+id/textFavoritesValue"
+                        android:src="@drawable/icon_favorite_white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/textDescription3"
+                        android:layout_below="@+id/textFavoritesValue">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/line_gradient" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textDescription3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/black"
+                        android:text="@string/favorites"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="240dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_gradient_space"
+        android:layout_alignTop="@+id/listView"
+        android:background="@drawable/list_gradient" />
+</RelativeLayout>

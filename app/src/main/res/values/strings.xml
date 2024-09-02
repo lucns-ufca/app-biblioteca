@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">My Library</string>
+    <string name="team_seventeen">Team 17</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="email" translatable="false">E-mail</string>
+    <string name="cpf" translatable="false">CPF</string>
+    <string name="password">Password</string>
+    <string name="new_account">New Account</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgotten_password">Forgotten Password</string>
+    <string name="deficiency_person">PD</string>
+    <string name="name">Name</string>
+    <string name="accessing">Accessing&#8230;</string>
+    <string name="close">Close</string>
+    <string name="user_registered">User registration successful</string>
+    <string name="user_not_registered">User not registered!</string>
+    <string name="user_already_exists">User already registered!</string>
+    <string name="wrong_password">Wrong password!</string>
+    <string name="invalid_data">Invalid data!</string>
+    <string name="try_create_account">Try creating a new account</string>
+    <string name="try_using_different">Try using a different cpf</string>
+    <string name="pd_description">PD description</string>
+    <string name="creating_account">Creating account&#8230;</string>
+    <string name="hello">Hello</string>
+    <string name="scientist">Scientist</string>
+    <string name="last_accessed">Last accessed</string>
+    <string name="in_debts">There are libraries that are late in being delivered, so there are debts to be paid!</string>
+    <string name="debit_value">$5,72</string>
+    <string name="debits_per_delay">Debit per delay</string>
+    <string name="read_books">Total read libraries</string>
+    <string name="read_books_value" translatable="false">123</string>
+    <string name="favorites_value" translatable="false">432</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="menu_another">Another Menu Item</string>
+    <string name="menu_item_another">Another menu item clicked!</string>
+    <string name="menu_logout" translatable="false">Logout</string>
+
+    <string name="library">Library</string>
+    <string name="search_book">Search a Book</string>
+    <string name="profile">My Profile</string>
+    <string name="debits">My Debits</string>
+    <string name="click_me">Click me</string>
+</resources>

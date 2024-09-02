@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editText"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/editTextName"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="@dimen/margin_3"
+    android:background="@drawable/edit_text_background"
+    android:hint="@string/app_name"
+    android:imeOptions="actionGo"
+    android:inputType="textCapSentences"
+    android:paddingStart="@dimen/margin_2"
+    android:paddingEnd="@dimen/margin_2"
+    android:textColor="@android:color/white"
+    android:textCursorDrawable="@drawable/cursor" />

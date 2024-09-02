@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/menu_another"
+            android:orderInCategory="0"
+            android:showAsAction="never"
+            android:title="@string/menu_another" />
+        <item
+            android:id="@+id/menu_logout"
+            android:orderInCategory="1"
+            android:showAsAction="never"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

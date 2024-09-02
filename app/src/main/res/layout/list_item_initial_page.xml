@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3"
+        android:layout_marginEnd="@dimen/margin_3"
+        android:layout_marginBottom="@dimen/margin_3"
+        android:background="@drawable/card_background"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBook"
+            android:layout_width="96dp"
+            android:layout_height="144dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/imageBook"
+            android:layout_alignBottom="@+id/imageBook"
+            android:layout_toEndOf="@+id/imageBook"
+            android:padding="@dimen/margin_3">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@+id/imageFavorite"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/button_enabled"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/icon_favorite" />
+
+            <LinearLayout
+                android:id="@+id/rootStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitle"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/start"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_star_full" />
+
+                <ImageView
+                    android:id="@+id/start2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_star_full" />
+
+                <ImageView
+                    android:id="@+id/start3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_star_full" />
+
+                <ImageView
+                    android:id="@+id/start4"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_star_full" />
+
+                <ImageView
+                    android:id="@+id/start5"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_star_half" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rootStars"
+                android:text="@string/app_name"
+                android:textColor="@color/default_text_dark"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/root"
+        android:layout_alignTop="@+id/root"
+        android:layout_alignEnd="@+id/root"
+        android:layout_alignBottom="@+id/root"
+        android:background="@drawable/list_item_ripple"
+        android:elevation="4dp" />
+</RelativeLayout>

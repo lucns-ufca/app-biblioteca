@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.equipe17.biblioteca.slider.SliderView
+        android:id="@+id/sliderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs" />
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabs_background"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/tabOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button_left"
+            android:src="@drawable/icon_home" />
+
+        <ImageButton
+            android:id="@+id/tabTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button"
+            android:src="@drawable/icon_book" />
+
+        <ImageButton
+            android:id="@+id/tabThree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button"
+            android:src="@drawable/icon_search" />
+
+        <ImageButton
+            android:id="@+id/tabFour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button_right"
+            android:src="@drawable/icon_person" />
+    </LinearLayout>
+</RelativeLayout>

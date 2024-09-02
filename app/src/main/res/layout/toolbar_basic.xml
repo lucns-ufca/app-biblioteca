@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_marginTop="25dp"
+    android:layout_height="56dp">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/fab_transparent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_arrow_back" />
+
+    <ImageButton
+        android:id="@+id/buttonMenu"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/fab_transparent"
+        android:src="@drawable/icon_more" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:textColor="@color/default_text"
+        android:textSize="24sp" />
+</RelativeLayout>
