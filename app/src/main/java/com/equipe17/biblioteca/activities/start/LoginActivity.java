@@ -124,7 +124,7 @@ public class LoginActivity extends Activity {
                                     break;
                             }
                         }
-                    }, 2500);
+                    }, 1000);
                 } else if (v.getId() == R.id.buttonNewAccount){
                     startActivity(new Intent(LoginActivity.this, NewAccountActivity.class));
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);

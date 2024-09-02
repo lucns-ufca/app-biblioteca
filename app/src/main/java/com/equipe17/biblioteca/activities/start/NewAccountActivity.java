@@ -47,10 +47,6 @@ public class NewAccountActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getWindow().setStatusBarColor(getColor(R.color.fragment_background));
 
-        Typeface fontThin = Typeface.createFromAsset(getAssets(), "fonts/RobotoLight.ttf");
-        TextView textTitle = findViewById(R.id.textTitle);
-        textTitle.setTypeface(fontThin);
-
         button = findViewById(R.id.buttonNewAccount);
         editTextUser = findViewById(R.id.editTextUser);
         editTextPassword = findViewById(R.id.editTextPassword);
@@ -159,7 +155,7 @@ public class NewAccountActivity extends Activity {
                                     break;
                             }
                         }
-                    }, 2500);
+                    }, 1000);
                 }
             }
         };

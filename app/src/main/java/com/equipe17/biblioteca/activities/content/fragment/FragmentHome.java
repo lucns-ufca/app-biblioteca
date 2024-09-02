@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.PopupMenu;
@@ -45,7 +44,7 @@ public class FragmentHome extends FragmentView {
         if (user.name.contains(" ")) {
             String[] segments = user.name.split(" ");
             if (segments.length > 2) {
-                name = segments[0] + segments[1].charAt(0) + ". " + segments[1];
+                name = segments[0] + " " + segments[1].charAt(0) + ". " + segments[1];
             } else {
                 name = user.name;
             }

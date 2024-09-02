@@ -15,8 +15,8 @@
             android:id="@+id/appIcon"
             android:layout_width="102dp"
             android:layout_height="102dp"
-            android:src="@drawable/app_icon"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/app_icon" />
 
         <TextView
             android:id="@+id/appName"
