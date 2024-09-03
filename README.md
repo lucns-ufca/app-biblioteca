@@ -15,7 +15,7 @@
 Otavio Leopoldino Machado Junior - 2023011466 <BR/>RAKEL TORRES CARVALHO - 2023011493<BR/>CLECIANO FREITAS FERREIRA - 2023011288<BR/>Carlos Bruno Sousa de Araújo - 2023011250<BR/>Lívia Nunes de Melo - 2023011386 <BR/>Lucas do Nascimento Souza - 2023011395<BR/><BR/>
 
 ## Descrição básica<br/>
-Foi desenvolvido um app de Biblioteca chamado Minha Biblioteca, onde é possivel criar varias contas de usuários, realizar login e assim ter acesso ao conteúdo do app.<br/>
+* Foi desenvolvido um app de Biblioteca chamado Minha Biblioteca, onde é possivel criar varias contas de usuários, realizar login e assim ter acesso ao conteúdo do app.<br/>
 * A primeira tela é um Splash Screen onde podemos ver algumas animações no icone do app, no texto da equipe atuante e na logo da UFCA.
 * A próxima tela é a de Login, onde o suário poderá realizar o aceso ao conteúdo do app por meio de suas credenciais, onde nela também é possível acessar a opção de criar uma nova conta.
 * Já na tela principal é mostrado dados gerais sobre os estados da conta do usuário, como débitos por atraso em devoluções de livros, ultimos livros acessados via app, livros favoritos e as abas de conteúdos que fica no inferior da tela.
@@ -23,12 +23,12 @@ Foi desenvolvido um app de Biblioteca chamado Minha Biblioteca, onde é possivel
 <br/><br/>
 
 ## Descrição técnica<br/>
-Foi usado técnicas especificas que podem ser consideradas até avançadas, para criação dos fragmentos nas telas iniciais Login e Nova Conta e também no Slider das telas principais.<br/> 
-O Slider é uma classe com extenção para a classe FrameLayout, que possibilita criar itens na tela com dimensoes maiores que a própria tela, possibilitando criar assim, um Scroll automatico que escorrega o conteúdo da tela ao clicar em um item da TabBar (Botões costumizados que ficam na parte inferior da tela).<br/>
-Não foi necessário uso de biblioteca.<br/>
-Todas as animções e itens especiais, não nativos, foram criados usando as classes nativas do Android, apenas fazendo extenções de classes nativas como o Slider que é extendido ao FrameLayout.<br/>
-Na parte superior da tela principal(primeira aba), há uns cards onde o primeiro mostra o dado referente ao débito. Nos cards são usados um HorizontalScrollView para possibilitar o escorregamento dos mesmos, na tela. E os cards são apenas RelativeLayout com um background setado do tipo gradient, para dar o efeito de coloração e parecer um card.<br/>
-Na lista da tela inicial foi usada a classe básica de listas que é a ListView.<br/>
+* Foi usado técnicas especificas que podem ser consideradas até avançadas, para criação dos fragmentos nas telas iniciais Login e Nova Conta e também no Slider das telas principais.<br/> 
+* O Slider é uma classe com extenção para a classe FrameLayout, que possibilita criar itens na tela com dimensoes maiores que a própria tela, possibilitando criar assim, um Scroll automatico que escorrega o conteúdo da tela ao clicar em um item da TabBar (Botões costumizados que ficam na parte inferior da tela).<br/>
+* Não foi necessário uso de biblioteca.<br/>
+* Todas as animções e itens especiais, não nativos, foram criados usando as classes nativas do Android, apenas fazendo extenções de classes nativas como o Slider que é extendido ao FrameLayout.<br/>
+* Na parte superior da tela principal(primeira aba), há uns cards onde o primeiro mostra o dado referente ao débito. Nos cards são usados um HorizontalScrollView para possibilitar o escorregamento dos mesmos, na tela. E os cards são apenas RelativeLayout com um background setado do tipo gradient, para dar o efeito de coloração e parecer um card.<br/>
+* Na lista da tela inicial foi usada a classe básica de listas que é a ListView.<br/>
 
 ## Screenshoots<br/>
 Telas iniciais:<br/>
