@@ -9,7 +9,7 @@
 
   <h3 align="center">Minha Biblioteca</h3>
 </div>
-
+<BR/>
 
 ## Contribuintes:<BR/>
 Otavio Leopoldino Machado Junior - 2023011466 <BR/>RAKEL TORRES CARVALHO - 2023011493<BR/>CLECIANO FREITAS FERREIRA - 2023011288<BR/>Carlos Bruno Sousa de Araújo - 2023011250<BR/>Lívia Nunes de Melo - 2023011386 <BR/>Lucas do Nascimento Souza - 2023011395<BR/><BR/>
@@ -20,8 +20,9 @@ Foi desenvolvido um app de Biblioteca chamado Minha Biblioteca, onde é possivel
 * A próxima tela é a de Login, onde o suário poderá realizar o aceso ao conteúdo do app por meio de suas credenciais, onde nela também é possível acessar a opção de criar uma nova conta.
 * Já na tela principal é mostrado dados gerais sobre os estados da conta do usuário, como débitos por atraso em devoluções de livros, ultimos livros acessados via app, livros favoritos e as abas de conteúdos que fica no inferior da tela.
 * Nas abas foram disponibilizadas varias opções de conteúdos, onde é possivel alternar entre telas por meio de um Slider/PagerView.
+<br/><br/>
 
-## Descrição básica<br/><br/>
+## Descrição técnica<br/>
 Foi usado técnicas especificas que podem ser consideradas até avançadas, para criação dos fragmentos nas telas iniciais Login e Nova Conta e também no Slider das telas principais.<br/> 
 O Slider é uma classe com extenção para a classe FrameLayout, que possibilita criar itens na tela com dimensoes maiores que a própria tela, possibilitando criar assim, um Scroll automatico que escorrega o conteúdo da tela ao clicar em um item da TabBar (Botões costumizados que ficam na parte inferior da tela).<br/>
 Não foi necessário uso de biblioteca.<br/>
