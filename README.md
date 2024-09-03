@@ -24,11 +24,15 @@ Otavio Leopoldino Machado Junior - 2023011466 <BR/>RAKEL TORRES CARVALHO - 20230
 
 ## Descrição técnica<br/>
 * Foi usado técnicas especificas que podem ser consideradas até avançadas, para criação dos fragmentos nas telas iniciais Login e Nova Conta e também no Slider das telas principais.<br/> 
-* O Slider é uma classe com extenção para a classe FrameLayout, que possibilita criar itens na tela com dimensoes maiores que a própria tela, possibilitando criar assim, um Scroll automatico que escorrega o conteúdo da tela ao clicar em um item da TabBar (Botões costumizados que ficam na parte inferior da tela).<br/>
+* O Slider é uma classe com extenção para a classe FrameLayout, que possibilita criar itens na tela com dimensoes maiores que a própria tela, facilitando criar um Scroll automatico que escorrega o conteúdo da tela ao clicar em um item da TabBar (Botões costumizados que ficam na parte inferior da tela).<br/>
 * Não foi necessário uso de biblioteca.<br/>
-* Todas as animções e itens especiais, não nativos, foram criados usando as classes nativas do Android, apenas fazendo extenções de classes nativas como o Slider que é extendido ao FrameLayout.<br/>
-* Na parte superior da tela principal(primeira aba), há uns cards onde o primeiro mostra o dado referente ao débito. Nos cards são usados um HorizontalScrollView para possibilitar o escorregamento dos mesmos, na tela. E os cards são apenas RelativeLayout com um background setado do tipo gradient, para dar o efeito de coloração e parecer um card.<br/>
-* Na lista da tela inicial foi usada a classe básica de listas que é a ListView.<br/>
+* Todas as animações e itens especiais, não nativos do Android, foram criados apenas fazendo extenções de classes, como o Slider que é extendido ao FrameLayout para que fosse possivel criar telas paralelas horizontalmente.<br/>
+* Na parte superior da tela principal(primeira aba), há uns cards onde o primeiro mostra o dado referente ao débito. Nesses cards são usados um HorizontalScrollView como Widget pai, para possibilitar o escorregamento dos mesmos, na tela. E os cards são apenas Widgets do tipo RelativeLayout com um background setado do tipo gradient, via tags do XML, para dar o efeito de coloração e parecer um card.<br/>
+* Na lista da tela inicial foi usada a classe básica de listas que é a ListView tendo a classe costumizada CardListAdapter exxtendida a classe ArrayAdapter, como provedor de conteúdos para a lista.<br/>
+* Existe uma classe chamada LibraryProvider que serve exclusivamente para suprir as variaveis da classe Library. Ela faz isso fazendo a varredura dos dados presentes na pasta assets, que é onde fica salvo o acervo de livros.
+* O acervo de livros são organizados por meio de um arquivo chamado Books.json, que está dentro da pasta /assets/books/Books.json.
+* O arquivo Books.json guarda dados dos livros, como titulo, descrição, data de lançamento, e o nome do arquivo da capa dos livros.
+* As capas sao imagens que ficam na pasta /assets/books/covers.
 
 ## Screenshoots<br/>
 Telas iniciais:<br/>
