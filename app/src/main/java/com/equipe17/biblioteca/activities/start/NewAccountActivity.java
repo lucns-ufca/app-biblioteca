@@ -76,7 +76,7 @@ public class NewAccountActivity extends Activity {
                 updateButton();
             }
         }));
-        editTextPassword.addTextChangedListener(new TextWatcher() {
+        TextWatcher textWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -91,23 +91,10 @@ public class NewAccountActivity extends Activity {
             public void afterTextChanged(Editable s) {
 
             }
-        });
-        editTextName.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                updateButton();
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
+        };
+        editTextPassword.addTextChangedListener(textWatcher);
+        editTextName.addTextChangedListener(textWatcher);
+        editTextPd.addTextChangedListener(textWatcher);
         SharedPreferences sharedPreferences = getSharedPreferences("main_app_preferences", MODE_PRIVATE);
         DialogFinalMessage dialogFinalMessage = new DialogFinalMessage(this);
         UsersManager usersManager = UsersManager.getInstance(this);
