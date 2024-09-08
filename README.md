@@ -36,11 +36,7 @@ Otavio Leopoldino Machado Junior - 2023011466 <BR/>RAKEL TORRES CARVALHO - 20230
 
 ## Screenshoots<br/>
 Telas iniciais:<br/>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/0a729623-32c4-477c-814c-e90c583afee5">
-  <img src="https://github.com/user-attachments/assets/d4ee1336-1a5f-458e-b88a-fd64fa4cd432">
-  <br/>
-  <img src="https://github.com/user-attachments/assets/5c804b93-22b2-453d-9e88-3ff7877a1b9d">
-  <img src="https://github.com/user-attachments/assets/b1314f8b-b39a-4e3a-80b1-50c14feddb55">
-</div>
+![Screenshot_20240902_201540_My Library](https://github.com/user-attachments/assets/92015c69-f75e-4bed-82a4-9bce26852830)
+![Screenshot_20240902_160257_My Library](https://github.com/user-attachments/assets/fff43315-545d-4ea7-87eb-712b54c0567a)
+![Screenshot_20240902_201603_My Library](https://github.com/user-attachments/assets/fdaac927-7ecd-4973-8423-e307be2edced)
+![Screenshot_20240902_160702_My Library](https://github.com/user-attachments/assets/0f4be400-6fe9-4b1b-9a60-96170fe271c2)
