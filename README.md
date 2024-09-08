@@ -20,6 +20,7 @@ Otavio Leopoldino Machado Junior - 2023011466 <BR/>RAKEL TORRES CARVALHO - 20230
 * A próxima tela é a de Login, onde o suário poderá realizar o aceso ao conteúdo do app por meio de suas credenciais, e também é possível acessar a opção de criar uma nova conta.
 * Já na tela principal é mostrado dados gerais sobre os estados da conta do usuário, como débitos por atraso em devoluções de livros, ultimos livros acessados via app, livros favoritos e as abas de conteúdos que fica no inferior da tela.
 * Nas abas foram disponibilizadas varias opções de conteúdos, onde é possivel alternar entre telas por meio de um Slider/PagerView.
+* Wireframe do [Entregável Parcial 2](https://www.figma.com/design/e8aBcmDhMgyiUdDOY5y9di/Entregavel-Parcial-2---Wireframe).
 <br/><br/>
 
 ## Descrição técnica<br/>
