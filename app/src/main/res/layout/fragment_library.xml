@@ -102,7 +102,6 @@
             </GridLayout>
         </HorizontalScrollView>
 
-        <include layout="@layout/activity_tabs"/>
 
     </RelativeLayout>
 
