@@ -28,5 +28,6 @@ public class FragmentLibrary extends FragmentView {
         TextView textTitle = findViewById(R.id.textTitle);
         textTitle.setText(R.string.library);
 
+
     }
 }
