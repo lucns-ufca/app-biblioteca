@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.equipe17.biblioteca.R;
 import com.equipe17.biblioteca.activities.content.CardListAdapter;
+import com.equipe17.biblioteca.activities.content.CardLoanAdapter;
 import com.equipe17.biblioteca.book.Library;
 import com.equipe17.biblioteca.book.LibraryProvider;
 import com.equipe17.biblioteca.book.OnLibraryAvailableListener;
@@ -50,7 +51,7 @@ public class FragmentLoan extends FragmentView {
         libraryProvider.readLibrary("books", new OnLibraryAvailableListener() {
             @Override
             public void onAvailable(Library library) {
-                listView.setAdapter(new CardListAdapter(getContext(), library.getBooks()));
+                listView.setAdapter(new CardLoanAdapter(getContext(), library.getBooks()));
             }
         });
     }

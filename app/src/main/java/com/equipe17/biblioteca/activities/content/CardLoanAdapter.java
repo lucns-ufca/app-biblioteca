@@ -32,7 +32,7 @@ public class CardLoanAdapter extends ArrayAdapter<String> {
         this.bitmaps = new Bitmap[books.length];
         Resources resources = context.getResources();
         int roundPixels = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, resources.getDimension(R.dimen.margin_4), resources.getDisplayMetrics());
-        views = new View[books.length + 1];
+        views = new View[books.length];
         inflater = LayoutInflater.from(context);
         for (int i = 0; i < books.length; i++) {
             bitmaps[i] = ImageTreatment.roundImageCorners(books[i].cover, roundPixels);
@@ -50,10 +50,8 @@ public class CardLoanAdapter extends ArrayAdapter<String> {
             View view = inflater.inflate(R.layout.list_item_loan, null, false);
             ImageView bookCover = view.findViewById(R.id.imageBook);
             TextView textTitle = view.findViewById(R.id.textTitle);
-            TextView textDescription = view.findViewById(R.id.textDescription);
-            bookCover.setImageBitmap(bitmaps[position - 1]);
-            textTitle.setText(books[position - 1].title);
-            textDescription.setText(books[position - 1].description);
+            bookCover.setImageBitmap(bitmaps[position]);
+            textTitle.setText(books[position].title);
             views[position] = view;
         }
         return views[position];
