@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
@@ -30,17 +31,19 @@ public class FragmentLoan extends FragmentView {
         setContentView(R.layout.fragment_library);
 
         TextView textTitle = findViewById(R.id.textTitle);
-        textTitle.setText(R.string.library);
-
-        Vibrator vibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
-        findViewById(R.id.button).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
-                Toast.makeText(getActivity(), "Botão clicado :D", Toast.LENGTH_SHORT).show();
-
-            }
-        });
+        textTitle.setText(R.string.my_loan);
+        ImageButton buttonBack = findViewById(R.id.buttonBack);
+        buttonBack.setVisibility(View.INVISIBLE);
+//
+//        Vibrator vibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
+//        findViewById(R.id.button).setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
+//                Toast.makeText(getActivity(), "Botão clicado :D", Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
 
         ListView listView = findViewById(R.id.listView);
         LibraryProvider libraryProvider = LibraryProvider.getInstance(getContext());

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
 
 
     <RelativeLayout
@@ -34,9 +34,9 @@
             <TextView
                 android:id="@+id/textTitle"
                 android:layout_width="match_parent"
-                android:layout_toStartOf="@+id/imageFavorite"
                 android:layout_height="wrap_content"
-                android:text="Nome do Livro:"
+                android:layout_toStartOf="@+id/imageFavorite"
+                android:text="Nome do Livro"
                 android:textColor="@color/button_enabled"
                 android:textSize="18sp" />
 
@@ -47,9 +47,34 @@
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/icon_favorite" />
 
+            <TextView
+                android:id="@+id/textLoanDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageFavorite"
+                android:text="Data de Empréstimo" />
 
+            <TextView
+                android:id="@+id/textLoanDataValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLoanDate"
+                android:text="01/01/2001" />
+
+            <TextView
+                android:id="@+id/textDevolutionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLoanDate"
+                android:text="Data de Devolução" />
+
+            <TextView
+                android:id="@+id/textDevolutionDataValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDevolutionDate"
+                android:text="01/01/2001" />
 
         </RelativeLayout>
-
-
     </RelativeLayout>
+</LinearLayout>

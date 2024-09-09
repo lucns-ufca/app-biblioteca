@@ -27,14 +27,5 @@ public class FragmentLibrary extends FragmentView {
         TextView textTitle = findViewById(R.id.textTitle);
         textTitle.setText(R.string.library);
 
-        Vibrator vibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
-        findViewById(R.id.button).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
-                Toast.makeText(getActivity(), "Botão clicado :D", Toast.LENGTH_SHORT).show();
-
-            }
-        });
     }
 }
