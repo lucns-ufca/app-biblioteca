@@ -61,19 +61,19 @@
                 android:layout_below="@+id/textLoanDate"
                 android:text="01/01/2001" />
 
-            <TextView
-                android:id="@+id/textDevolutionDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textLoanDate"
-                android:text="Data de Devolução" />
+<!--            <TextView-->
+<!--                android:id="@+id/textDevolutionDate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/textLoanDate"-->
+<!--                android:text="Data de Devolução" />-->
 
-            <TextView
-                android:id="@+id/textDevolutionDataValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textDevolutionDate"
-                android:text="01/01/2001" />
+<!--            <TextView-->
+<!--                android:id="@+id/textDevolutionDataValue"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/textDevolutionDate"-->
+<!--                android:text="01/01/2001" />-->
 
         </RelativeLayout>
     </RelativeLayout>
