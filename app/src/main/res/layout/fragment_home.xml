@@ -150,6 +150,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_below="@+id/textDebit"
+                        android:layout_marginTop="@dimen/margin"
+                        android:layout_marginBottom="@dimen/margin"
                         android:background="@drawable/line_gradient" />
 
                     <TextView
@@ -199,6 +201,8 @@
                         android:layout_height="1dp"
                         android:layout_below="@+id/textRead"
                         android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/margin"
+                        android:layout_marginBottom="@dimen/margin"
                         android:background="@drawable/line_gradient" />
 
                     <TextView
@@ -248,6 +252,8 @@
                         android:layout_height="1dp"
                         android:layout_below="@+id/textFavoritesValue"
                         android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/margin"
+                        android:layout_marginBottom="@dimen/margin"
                         android:background="@drawable/line_gradient" />
 
                     <TextView

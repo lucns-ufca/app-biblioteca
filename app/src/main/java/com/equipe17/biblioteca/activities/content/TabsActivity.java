@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 import com.equipe17.biblioteca.R;
 import com.equipe17.biblioteca.activities.content.fragment.FragmentHome;
 import com.equipe17.biblioteca.activities.content.fragment.FragmentLibrary;
+import com.equipe17.biblioteca.activities.content.fragment.FragmentLoan;
 import com.equipe17.biblioteca.activities.content.fragment.FragmentProfile;
 import com.equipe17.biblioteca.activities.content.fragment.FragmentSearch;
 import com.equipe17.biblioteca.slider.SliderView;
@@ -34,6 +35,7 @@ public class TabsActivity extends Activity {
         sliderView.addFragment(new FragmentHome(TabsActivity.this));
         sliderView.addFragment(new FragmentLibrary(TabsActivity.this));
         sliderView.addFragment(new FragmentSearch(TabsActivity.this));
+        sliderView.addFragment(new FragmentLoan(TabsActivity.this));
         sliderView.addFragment(new FragmentProfile(TabsActivity.this));
         sliderView.setOnSliderChangedListener(new SliderView.OnSliderChangedListener() {
             @Override
@@ -47,6 +49,7 @@ public class TabsActivity extends Activity {
         ImageButton tabTwo = findViewById(R.id.tabTwo);
         ImageButton tabThree = findViewById(R.id.tabThree);
         ImageButton tabFour = findViewById(R.id.tabFour);
+        ImageButton tabFive = findViewById(R.id.tabFive);
         View.OnClickListener onClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,30 +58,35 @@ public class TabsActivity extends Activity {
                     tabTwo.setActivated(false);
                     tabThree.setActivated(false);
                     tabFour.setActivated(false);
+                    tabFive.setActivated(false);
                     sliderView.goToIndex(0, 300);
                 } else if (v.getId() == R.id.tabTwo) {
                     tabOne.setActivated(false);
                     tabTwo.setActivated(true);
                     tabThree.setActivated(false);
                     tabFour.setActivated(false);
+                    tabFive.setActivated(false);
                     sliderView.goToIndex(1, 300);
                 } else if (v.getId() == R.id.tabThree) {
                     tabOne.setActivated(false);
                     tabTwo.setActivated(false);
                     tabThree.setActivated(true);
                     tabFour.setActivated(false);
+                    tabFive.setActivated(false);
                     sliderView.goToIndex(2, 300);
                 } else if (v.getId() == R.id.tabFour) {
                     tabOne.setActivated(false);
                     tabTwo.setActivated(false);
                     tabThree.setActivated(false);
                     tabFour.setActivated(true);
+                    tabFive.setActivated(false);
                     sliderView.goToIndex(3, 300);
                 } else {
                     tabOne.setActivated(false);
                     tabTwo.setActivated(false);
                     tabThree.setActivated(false);
                     tabFour.setActivated(false);
+                    tabFive.setActivated(true);
                     sliderView.goToIndex(4, 300);
                 }
             }
@@ -87,5 +95,6 @@ public class TabsActivity extends Activity {
         tabTwo.setOnClickListener(onClick);
         tabThree.setOnClickListener(onClick);
         tabFour.setOnClickListener(onClick);
+        tabFive.setOnClickListener(onClick);
     }
 }

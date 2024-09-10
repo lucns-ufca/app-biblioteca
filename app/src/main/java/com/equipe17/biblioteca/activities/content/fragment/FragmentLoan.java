@@ -29,7 +29,7 @@ public class FragmentLoan extends FragmentView {
 
     @Override
     public void onCreate() {
-        setContentView(R.layout.fragment_library);
+        setContentView(R.layout.fragment_loan);
 
         TextView textTitle = findViewById(R.id.textTitle);
         textTitle.setText(R.string.my_loan);
