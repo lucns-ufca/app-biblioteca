@@ -26,8 +26,6 @@ public class FragmentLibrary extends FragmentView {
         setContentView(R.layout.fragment_library);
 
         TextView textTitle = findViewById(R.id.textTitle);
-        textTitle.setText(R.string.library);
-
-
+        textTitle.setText(R.string.search_book);
     }
 }

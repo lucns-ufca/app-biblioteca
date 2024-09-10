@@ -68,12 +68,18 @@ public class TabsActivity extends Activity {
                     tabThree.setActivated(true);
                     tabFour.setActivated(false);
                     sliderView.goToIndex(2, 300);
-                } else { // tabFour
+                } else if (v.getId() == R.id.tabFour) {
                     tabOne.setActivated(false);
                     tabTwo.setActivated(false);
                     tabThree.setActivated(false);
                     tabFour.setActivated(true);
                     sliderView.goToIndex(3, 300);
+                } else {
+                    tabOne.setActivated(false);
+                    tabTwo.setActivated(false);
+                    tabThree.setActivated(false);
+                    tabFour.setActivated(false);
+                    sliderView.goToIndex(4, 300);
                 }
             }
         };

@@ -35,5 +35,6 @@
 
     <string name="menu_another">Outro menu iten</string>
     <string name="menu_item_another">Item do menu clicado!</string>
+    <string name="my_loan">Meus Empréstimos</string>
 
 </resources>
