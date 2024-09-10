@@ -2,6 +2,7 @@ package com.equipe17.biblioteca.activities.content.fragment;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.view.View;
@@ -26,14 +27,5 @@ public class FragmentLibrary extends FragmentView {
 
         TextView textTitle = findViewById(R.id.textTitle);
         textTitle.setText(R.string.search_book);
-
-        Vibrator vibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
-        findViewById(R.id.button).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
-                Toast.makeText(getActivity(), "Botão clicado :D", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }
