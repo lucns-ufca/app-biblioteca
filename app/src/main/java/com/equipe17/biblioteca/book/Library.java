@@ -19,7 +19,16 @@ public class Library {
 
     public Book[] search(String text) {
         List<Book> selected = new ArrayList<>();
-        for (Book book : books) if (book.title.contains(text)) selected.add(book);
+        // Converte o texto de busca para minúsculas
+        String lowerCaseText = text.toLowerCase();
+
+        // Itera sobre os livros e compara o título em minúsculas
+        for (Book book : books) {
+            if (book.title.toLowerCase().contains(lowerCaseText)) {
+                selected.add(book);
+            }
+        }
         return selected.toArray(new Book[0]);
     }
+
 }
