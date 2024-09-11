@@ -8,7 +8,7 @@
   </a>
 
   <h3 align="center">Minha Biblioteca</h3>
-  <a href="https://drive.google.com/drive/folders/16Zi184nW16NXDW3KQkFen8y63UBEVv2b" target="_blank">APK</a>
+  <a href="https://drive.google.com/file/d/11xx9n1JoI3Vo5VVEpwJac5RjYvsVtgHn/view?usp=sharing" target="_blank">APK</a>
 </div>
 <BR/>
 
