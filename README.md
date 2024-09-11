@@ -9,6 +9,7 @@
 
   <h3 align="center">Minha Biblioteca</h3>
   <h3 align="center" href="https://drive.google.com/drive/folders/16Zi184nW16NXDW3KQkFen8y63UBEVv2b">APK</h3>
+  <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
 </div>
 <BR/>
 
